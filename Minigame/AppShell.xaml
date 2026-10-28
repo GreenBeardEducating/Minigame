@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:Minigame"
+       x:Class="Minigame.AppShell"
+       Title="Minigame">
+
+    <TabBar>
+        <ShellContent Title="Поле"
+                      Route="field"
+                      ContentTemplate="{DataTemplate local:MainPage}" />
+
+        <ShellContent Title="Ліс"
+                      Route="forest"
+                      ContentTemplate="{DataTemplate local:ForestPage}" />
+
+        <ShellContent Title="Вороги"
+                      Route="enemies"
+                      ContentTemplate="{DataTemplate local:EnemiesPage}" />
+
+        <ShellContent Title="Пагорб"
+                      Route="hill"
+                      ContentTemplate="{DataTemplate local:HillPage}" />
+
+        <ShellContent Title="Крафт"
+                      Route="crafting"
+                      ContentTemplate="{DataTemplate local:CraftingPage}" />
+
+        <ShellContent Title="&#1030;&#1085;&#1074;&#1077;&#1085;&#1090;&#1072;&#1088;"
+                      Route="inventory"
+                      ContentTemplate="{DataTemplate local:InventoryPage}" />
+    </TabBar>
+</Shell>

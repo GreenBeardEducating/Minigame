@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Minigame.CraftingPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#F3F4F6">
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="12">
+            <Label Text="Крафт" FontSize="26" FontAttributes="Bold" TextColor="#1F2937" />
+            <Label x:Name="ResourcesLabel" TextColor="#374151" />
+            <Label x:Name="StatusLabel" TextColor="#166534" />
+
+            <Button Text="Дерев'яна кирка — 3 дерева" CommandParameter="WoodenPickaxe" Clicked="OnCraftClicked" />
+            <Label x:Name="WoodenPickaxeCountLabel" Text="Створено: 0" TextColor="#374151" />
+            <Button Text="Кам'яна кирка — 2 дерева, 3 камені" CommandParameter="StonePickaxe" Clicked="OnCraftClicked" />
+            <Label x:Name="StonePickaxeCountLabel" Text="Створено: 0" TextColor="#374151" />
+            <Button Text="Дерев'яна сокира — 3 дерева" CommandParameter="WoodenAxe" Clicked="OnCraftClicked" />
+            <Label x:Name="WoodenAxeCountLabel" Text="Створено: 0" TextColor="#374151" />
+            <Button Text="Кам'яна сокира — 2 дерева, 3 камені" CommandParameter="StoneAxe" Clicked="OnCraftClicked" />
+            <Label x:Name="StoneAxeCountLabel" Text="Створено: 0" TextColor="#374151" />
+            <Button Text="Дерев'яний меч — 3 дерева" CommandParameter="WoodenSword" Clicked="OnCraftClicked" />
+            <Label x:Name="WoodenSwordCountLabel" Text="Створено: 0" TextColor="#374151" />
+            <Button Text="Кам'яний меч — 2 дерева, 3 камені" CommandParameter="StoneSword" Clicked="OnCraftClicked" />
+            <Label x:Name="StoneSwordCountLabel" Text="Створено: 0" TextColor="#374151" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

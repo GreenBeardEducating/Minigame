@@ -1,0 +1,73 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Minigame.InventoryPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#F3F4F6">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="16">
+            <Label Text="&#1030;&#1085;&#1074;&#1077;&#1085;&#1090;&#1072;&#1088;"
+                   FontSize="26"
+                   FontAttributes="Bold"
+                   TextColor="#1F2937" />
+
+            <Border Padding="16"
+                    BackgroundColor="White"
+                    Stroke="#D1D5DB"
+                    StrokeThickness="1">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="8" />
+                </Border.StrokeShape>
+
+                <VerticalStackLayout Spacing="12">
+                    <Label Text="&#1055;&#1088;&#1077;&#1076;&#1084;&#1077;&#1090;&#1080;"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="#1F2937" />
+                    <VerticalStackLayout Spacing="8">
+                        <Label x:Name="MilkCountLabel"
+                               Text="&#1052;&#1086;&#1083;&#1086;&#1082;&#1086;: 0"
+                               FontSize="16"
+                               TextColor="#374151" />
+                        <Label x:Name="WoodCountLabel"
+                               Text="&#1044;&#1077;&#1088;&#1077;&#1074;&#1080;&#1085;&#1072;: 0"
+                               FontSize="16"
+                               TextColor="#374151" />
+                        <Label x:Name="StoneCountLabel"
+                               Text="&#1050;&#1072;&#1084;&#1110;&#1085;&#1100;: 0"
+                               FontSize="16"
+                               TextColor="#374151" />
+                         <Label x:Name="ToolsCountLabel"
+                                Text="Інструменти: немає"
+                                FontSize="16"
+                                TextColor="#374151" />
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Padding="16"
+                    BackgroundColor="White"
+                    Stroke="#D1D5DB"
+                    StrokeThickness="1">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="8" />
+                </Border.StrokeShape>
+
+                <VerticalStackLayout Spacing="12">
+                    <Label Text="&#1061;&#1072;&#1088;&#1072;&#1082;&#1090;&#1077;&#1088;&#1080;&#1089;&#1090;&#1080;&#1082;&#1080;"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="#1F2937" />
+                    <Border HeightRequest="120"
+                            BackgroundColor="#F9FAFB"
+                            Stroke="#E5E7EB"
+                            StrokeThickness="1">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="8" />
+                        </Border.StrokeShape>
+                    </Border>
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

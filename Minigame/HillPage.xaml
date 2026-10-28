@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Minigame.HillPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#F3F4F6">
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="16">
+            <Label Text="&#1055;&#1072;&#1075;&#1086;&#1088;&#1073;"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="#1F2937" />
+
+            <Border Padding="12" BackgroundColor="#111827" Stroke="#374151">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="8" />
+                </Border.StrokeShape>
+                <ScrollView Orientation="Horizontal">
+                    <Label x:Name="ArtLabel"
+                           FontFamily="monospace"
+                           FontSize="20"
+                           LineBreakMode="NoWrap"
+                           TextColor="#D1FAE5" />
+                </ScrollView>
+            </Border>
+
+            <Button x:Name="GatherButton"
+                    Text="&#1047;&#1110;&#1073;&#1088;&#1072;&#1090;&#1080; 5 &#1088;&#1077;&#1089;&#1091;&#1088;&#1089;&#1110;&#1074;"
+                    Clicked="OnGatherClicked"
+                    BackgroundColor="#166534"
+                    TextColor="White"
+                    CornerRadius="10" />
+            <Label x:Name="StatusLabel" TextColor="#374151" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

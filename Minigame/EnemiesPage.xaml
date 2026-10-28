@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Minigame.EnemiesPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#F3F4F6">
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="16">
+            <Label Text="Локація ворогів" FontSize="26" FontAttributes="Bold" TextColor="#1F2937" />
+            <Border Padding="20" BackgroundColor="#111827" Stroke="#374151">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="8" />
+                </Border.StrokeShape>
+                <Label x:Name="EnemyArtLabel" Text="&#x1F7E2;" FontSize="72" HorizontalTextAlignment="Center" />
+            </Border>
+            <Label x:Name="EnemyNameLabel" FontSize="20" FontAttributes="Bold" TextColor="#1F2937" HorizontalTextAlignment="Center" />
+            <Label x:Name="EnemyHealthLabel" TextColor="#374151" HorizontalTextAlignment="Center" />
+            <Label x:Name="PlayerHealthLabel" TextColor="#374151" HorizontalTextAlignment="Center" />
+            <Label x:Name="KillsLabel" TextColor="#374151" HorizontalTextAlignment="Center" />
+            <Button x:Name="AttackButton" Text="Атакувати" Clicked="OnAttackClicked" BackgroundColor="#991B1B" TextColor="White" CornerRadius="10" />
+            <Label x:Name="StatusLabel" Text="Вороги з'являються по черзі. Меч збільшує шкоду." TextColor="#374151" HorizontalTextAlignment="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
